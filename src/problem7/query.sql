@@ -14,7 +14,7 @@ WITH usd_amount AS (
             BY address
 )
 SELECT 
-    *
+    usd_amount.address
 FROM 
     usd_amount
 JOIN trades ON usd_amount.address = trades.address
