@@ -9,7 +9,7 @@ const addresses = [
     '0xd1d8b2aae2ebb2acf013b803bc3c24ca1303a392'
 ];
 
-async function getHolders(): Promise<void> {
+async function retrieveHolders(): Promise<void> {
     const contract = new ethers.Contract(contractAddress, swthABI, provider);
     const decimals = await contract.decimals()
 
@@ -43,4 +43,4 @@ function addCommas(amount: string) {
     return wholeWithCommas + decimal
 }
 
-getHolders().catch(console.error);
+retrieveHolders().catch(console.error);
