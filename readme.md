@@ -1,10 +1,7 @@
-# Switcheo Code Challenge #1 #
+# Switcheo Code Challenge
 
-Note that if you fork this repository, your responses may be publicly linked to this repo.  
-Please submit your application along with the solutions attached or linked.   
+This is my attempt for the the Switcheo Code Challenge as part of my application to Switcheo as a backend engineer.
 
-It is important that you minimally attempt the problems, even if you do not arrive at a working solution.
+## My Thoughts
 
-## Submission ##
-You can either provide a link to an online repository, attach the solution in your application, or whichever method you prefer.
-We're cool as long as we can view your solution without any pain.
+I definitely enjoyed myself with the challenge and loved how it got me to learn quite a chunk of new things within such a short period of time. The problems provided a great exposure to the techonologies used in web3 development and picking up the basics was an eye opening experience. I honestly wasn't sure of what to expect from this challenge, but I somehow ended up deploying my first ever smart contract in the process, soo this was pretty cool I guess!
