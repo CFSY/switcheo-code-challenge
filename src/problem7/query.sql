@@ -14,6 +14,7 @@ WITH usd_amount AS (
             BY address
 )
 SELECT 
+    DISTINCT
     usd_amount.address
 FROM 
     usd_amount
