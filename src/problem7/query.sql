@@ -8,17 +8,12 @@ WITH usd_amount AS (
                 WHEN denom = 'tmz' THEN amount * 0.003
             END
         ) AS total_balance
-        FROM 
-            balances
-        GROUP 
-            BY address
+    FROM balances
+    GROUP BY address
 )
-SELECT 
-    DISTINCT
-    usd_amount.address
-FROM 
-    usd_amount
-JOIN trades ON usd_amount.address = trades.address
+SELECT DISTINCT usd_amount.address
+FROM usd_amount
+    JOIN trades ON usd_amount.address = trades.address
 WHERE 
     total_balance >= 500 
     AND trades.block_height > 730000
